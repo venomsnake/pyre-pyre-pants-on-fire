@@ -9,7 +9,7 @@ from mongodb import mongodbconnection
 import warnings
 warnings.filterwarnings("ignore")
 
-
+host = localhost
 app = Flask(__name__)
 
 # Import Classification and Regression model file
@@ -101,4 +101,4 @@ def predictR():
 
 # Run APP in Debug mode
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=False)
+    app.run(host, debug=False)
